@@ -1,0 +1,11 @@
+numpy==1.26.1
+pandas==1.4.2
+scikit-learn==1.1.2
+tqdm==4.64.0
+transformers==4.34.1
+h5py==3.7.0
+loguru==0.6
+pynvml==11.4.1
+chardet==5.2.0
+accelerate==0.24.0
+torch==2.1.0

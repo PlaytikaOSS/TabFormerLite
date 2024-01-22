@@ -1,0 +1,34 @@
+{
+    "seed": 2023,
+    "pretrained_model_config": {
+        "model_directory": "../tutorial/pretraining/",
+        "model_name": "embedding_size_300",
+        "ckpt_dir": ""
+    },
+    "pretraining_data_config": {
+        "path_to_config_file": "../tutorial/data/card_dataset_encoded_seq_len_10_stride_5_bins_10/config.json"
+    },
+    "inference_data_config": {
+        "data_directory": "../tutorial/data/card_dataset_clean/inference"
+    },
+    "inference_config": {
+        "batch_size": 1024,
+        "pooling_on_time_axis": {
+            "strategy": "mean_pooling",
+            "nbr_days": 10
+        },
+        "pooling_on_layer_axis": {
+            "strategy": "single_layer_pooling",
+            "pooling_layer": -1
+        }
+    },
+    "downstream_task_config": {
+        "target_cols_to_include": [
+            "Is Fraud?"
+        ],
+        "path_to_data_with_labels": "../tutorial/data/card_dataset_clean/inference/",
+        "output_dir": "../tutorial/inference/embeddings_with_labels",
+        "user_col": "User",
+        "date_col": "event_dt"
+    }
+}

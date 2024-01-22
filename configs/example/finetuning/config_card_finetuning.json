@@ -1,0 +1,33 @@
+{
+  "pretrained_model_config": {
+    "model_directory": "../tutorial/pretraining/",
+    "model_name": "embedding_size_300",
+    "ckpt_dir": ""
+  },
+  "pretraining_data_config": {
+    "path_to_config_file": "../tutorial/data/card_dataset_encoded_seq_len_10_stride_5_bins_10/config.json"
+  },
+  "finetuning_data_config": {
+    "data_directory": "../tutorial/data/card_dataset_clean/inference"
+  },
+  "training_config": {
+    "seed": 2023,
+    "output_dir": "../tutorial/finetuning",
+    "output_folder": "embeddings_size_300",
+    "add_date_suffix_to_output": false,
+    "batch_size": 4000,
+    "grad_acc_steps": 2,
+    "logs_per_epoch": 50,
+    "num_epochs": 15,
+    "checkpoint_every_N_epochs": 1,
+    "lr_max": 1e-4,
+    "warmup_steps_in_epochs": 2,
+    "save_tot_lim": 1,
+    "problem_type": "classification",
+    "compute_pos_weight": true,
+    "pos_weight": 716,
+    "load_weights_from_pretraining": true,
+    "pos_label": 1,
+    "metric_for_best_model": "f1_score_minority"
+  }
+}
