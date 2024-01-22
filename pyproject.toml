@@ -6,9 +6,9 @@ build-backend = "poetry.core.masonry.api"
 name = "tabformerlite"
 version = "0.1.0"
 description = ""
-authors = ["Panagiota Xydi <panagiotax@playtika.com>",
-           "Yves Lamonato <yvesl@playtika.com>",
-           "Hugo Hernault <hugoh@playtika.com>"]
+authors = ["Panagiota Xydi",
+           "Yves Lamonato",
+           "Hugo Hernault"]
 readme = "README.md"
 classifiers = [
     "Programming Language :: Python :: 3 :: Only",
