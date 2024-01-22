@@ -1,0 +1,13 @@
+{
+    "data_dir": "../tutorial/data/card_dataset_clean/",
+    "data_name": "pretraining_data_clean.csv",
+    "n_max": 85000,
+    "user_col": "User",
+    "date_col": "event_dt",
+    "target_col": "Is Fraud?",
+    "seq_len": 10,
+    "num_bins": 10,
+    "stride": 5,
+    "encoded_data_dir": "../tutorial/data/",
+    "encoded_data_folder": "card_dataset_encoded_seq_len_10_stride_5_bins_10"
+}

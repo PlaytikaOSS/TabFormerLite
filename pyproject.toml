@@ -1,0 +1,37 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "tabformerlite"
+version = "0.1.0"
+description = ""
+authors = ["Panagiota Xydi <panagiotax@playtika.com>",
+           "Yves Lamonato <yvesl@playtika.com>",
+           "Hugo Hernault <hugoh@playtika.com>"]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+]
+
+[tool.poetry.dependencies]
+python = "~3.10"
+numpy = "1.26.1"
+pandas = "1.4.2"
+scikit-learn = "1.1.2"
+tqdm = "4.64.0"
+transformers = "4.34.1"
+h5py = "3.7.0"
+loguru = "0.6.0"
+pynvml = "11.4.1"
+chardet = "5.2.0"
+accelerate = "0.24.0"
+torch = "~2.1.0"
+pyarrow = "14.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pylint = "^3.0.3"
+tox = "^4.11.4"
+flake8 = "^6.1.0"

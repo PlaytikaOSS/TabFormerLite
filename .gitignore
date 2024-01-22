@@ -1,0 +1,17 @@
+# Temporary and binary files
+.idea
+.ipynb_checkpoints/
+__pycache__
+.python-version
+
+# Git worktrees
+brain-*
+
+# VSCode files
+.vscode
+
+# Tutorial data and output files
+tutorial/data/
+tutorial/inference/
+tutorial/finetuning
+tutorial/pretraining/

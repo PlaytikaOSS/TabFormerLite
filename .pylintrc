@@ -1,0 +1,19 @@
+[FORMAT]
+max-line-length=120
+
+[MESSAGES CONTROL]
+disable=
+    too-many-instance-attributes,
+    too-many-arguments,
+    too-many-locals,
+    too-many-branches,
+    too-many-statements,
+    too-few-public-methods,
+    missing-module-docstring,
+    super-with-arguments,
+    no-else-return,
+    broad-exception-raised,
+    consider-using-f-string,
+    superfluous-parens,
+    abstract-method,
+    duplicate-code,
