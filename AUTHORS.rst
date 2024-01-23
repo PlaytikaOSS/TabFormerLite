@@ -10,5 +10,5 @@ Authors
 |
 **Contributors**:
 
-* Yassine Benyahia
-* Adam Kozak
+* Yassine Benyahia, yassine.benyahia1@gmail.com
+* Adam Kozak, aadamkozak@gmail.com
