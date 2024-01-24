@@ -1,7 +1,7 @@
 # TabFormerLite: More Efficient Tabular Transformers
 
 In this repository, we introduce TabFormerLite, a fork of IBM's [TabFormer library](https://github.com/IBM/TabFormer).
-The original TabFormer library implements a transformer-based model for tabular time-series data, described in the paper [Tabular Transformers for modeling multivariate time series](https://arxiv.org/abs/2011.01843).
+The original TabFormer library implements a transformer-based model for tabular time-series data, described in [Padhi et al. 2021](https://arxiv.org/abs/2011.01843).
 
 In TabFormerLite, we address some of the limitations encountered in the original TabFormer library. Our changes have resulted in an updated model that is lighter, more flexible, and faster to train.
 
@@ -105,15 +105,3 @@ e.g.
 ```command line
 $ python3 scripts/finetuning.py -cfg configs/example/finetuning/config_card_finetuning.json
 ```
-
-## Citation
-
-@inproceedings{padhi2021tabular,
-  title={Tabular transformers for modeling multivariate time series},
-  author={Padhi, Inkit and Schiff, Yair and Melnyk, Igor and Rigotti, Mattia and Mroueh, Youssef and Dognin, Pierre and Ross, Jerret and Nair, Ravi and Altman, Erik},
-  booktitle={ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-  pages={3565--3569},
-  year={2021},
-  organization={IEEE},
-  url={https://ieeexplore.ieee.org/document/9414142}
-}
